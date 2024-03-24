@@ -25,8 +25,77 @@
         "files": [
           "src/main/java/net/mcreator/prehistoricuprising/block/TestBlockBlock.java",
           "src/main/resources/assets/prehistoric_uprising/blockstates/test_block.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/entity/TestBlockBlockEntity.java",
           "src/main/resources/assets/prehistoric_uprising/models/item/test_block.json",
           "src/main/resources/assets/prehistoric_uprising/models/block/test_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Jjjfjsddjfghdfg",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jjjfjsddjfghdfg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/JjjfjsddjfghdfgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/client/gui/SdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnbScreen.java",
+          "src/main/java/net/mcreator/prehistoricuprising/network/SdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnbSlotMessage.java",
+          "src/main/java/net/mcreator/prehistoricuprising/world/inventory/SdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnbMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Cvdfhfjkg",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cvdfhfjkg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/CvdfhfjkgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -36,6 +105,8 @@
   "language_map": {
     "en_us": {
       "block.prehistoric_uprising.test_block": "Test Block",
+      "gui.prehistoric_uprising.sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb.label_empty1": "----\u003e",
+      "gui.prehistoric_uprising.sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb.label_empty": "+",
       "item.prehistoric_uprising.testitem": "Testitem"
     }
   },

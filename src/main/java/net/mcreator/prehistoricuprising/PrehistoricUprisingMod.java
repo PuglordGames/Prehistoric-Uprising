@@ -29,8 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModMenus;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModItems;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModBlocks;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,9 +53,10 @@ public class PrehistoricUprisingMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		PrehistoricUprisingModBlocks.REGISTRY.register(bus);
-
+		PrehistoricUprisingModBlockEntities.REGISTRY.register(bus);
 		PrehistoricUprisingModItems.REGISTRY.register(bus);
 
+		PrehistoricUprisingModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
