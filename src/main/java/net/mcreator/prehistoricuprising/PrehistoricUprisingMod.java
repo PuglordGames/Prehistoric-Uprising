@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModItems;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -48,6 +49,8 @@ public class PrehistoricUprisingMod {
 	public PrehistoricUprisingMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		PrehistoricUprisingModBlocks.REGISTRY.register(bus);
 
 		PrehistoricUprisingModItems.REGISTRY.register(bus);
 

@@ -3,6 +3,7 @@
     {
       "name": "Testitem",
       "type": "item",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "testitem",
@@ -12,12 +13,29 @@
           "src/main/resources/assets/prehistoric_uprising/models/item/testitem.json"
         ]
       }
+    },
+    {
+      "name": "TestBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/block/TestBlockBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/test_block.json",
+          "src/main/resources/assets/prehistoric_uprising/models/item/test_block.json",
+          "src/main/resources/assets/prehistoric_uprising/models/block/test_block.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.prehistoric_uprising.test_block": "Test Block",
       "item.prehistoric_uprising.testitem": "Testitem"
     }
   },
