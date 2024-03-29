@@ -1,6 +1,4 @@
 {
-  "block.prehistoric_uprising.test_block": "Test Block",
-  "gui.prehistoric_uprising.sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb.label_empty1": "----\u003e",
-  "gui.prehistoric_uprising.sdfghjdfhgudfvhjfdghbhjdfhbdfsbnfdgvnb.label_empty": "+",
-  "item.prehistoric_uprising.testitem": "Testitem"
+  "entity.prehistoric_uprising.tyrannosaurus": "Tyrannosaurus",
+  "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg"
 }
