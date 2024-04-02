@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModTabs;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModSounds;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModItems;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModEntities;
 
@@ -50,6 +51,7 @@ public class PrehistoricUprisingMod {
 	public PrehistoricUprisingMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		PrehistoricUprisingModSounds.REGISTRY.register(bus);
 
 		PrehistoricUprisingModItems.REGISTRY.register(bus);
 		PrehistoricUprisingModEntities.REGISTRY.register(bus);

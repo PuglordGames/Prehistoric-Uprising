@@ -1,0 +1,41 @@
+{
+  "rex_hurt": {
+    "subtitle": "subtitles.rex_hurt",
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:rex_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "rex_death": {
+    "subtitle": "subtitles.rex_death",
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:rex_death",
+        "stream": false
+      }
+    ]
+  },
+  "rex_roar": {
+    "subtitle": "subtitles.rex_roar",
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:rex_roar",
+        "stream": false
+      }
+    ]
+  },
+  "rex_ambient": {
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:rex_ambient_1",
+        "stream": false
+      },
+      {
+        "name": "prehistoric_uprising:rex_ambient_2",
+        "stream": false
+      }
+    ]
+  }
+}

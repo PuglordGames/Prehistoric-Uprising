@@ -1,4 +1,8 @@
 {
+  "subtitles.rex_roar": "Tyrannosaurus roars",
   "entity.prehistoric_uprising.tyrannosaurus": "Tyrannosaurus",
-  "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg"
+  "subtitles.rex_hurt": "Tyrannosaurus gets hurt",
+  "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg",
+  "subtitles.rex_ambient": "",
+  "subtitles.rex_death": "Tyrannosaurus dies"
 }

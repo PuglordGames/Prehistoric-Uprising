@@ -392,7 +392,6 @@
 			}
 		},
 		"Roar": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 2.56,
 			"bones": {
 				"Body": {
@@ -405,7 +404,7 @@
 						},
 						"0.6": {
 							"vector": [15, 7.5, 0],
-							"easing": "easeInQuart"
+							"easing": "linear"
 						},
 						"1.68": {
 							"vector": [20, 7.5, 0]
@@ -449,7 +448,7 @@
 						},
 						"0.6": {
 							"vector": [7.5, -7.5, 0],
-							"easing": "easeInQuart"
+							"easing": "easeInQuad"
 						},
 						"2.0": {
 							"vector": [2.5, -7.5, 0]
@@ -475,7 +474,7 @@
 						},
 						"0.6": {
 							"vector": [-62.5, 0, 0],
-							"easing": "easeInQuart"
+							"easing": "easeInQuad"
 						},
 						"0.64": {
 							"vector": [-62.5, 0, -0.5],

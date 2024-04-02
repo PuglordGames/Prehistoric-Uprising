@@ -64,14 +64,87 @@
           "src/main/resources/data/minecraft/tags/blocks/eggs.json"
         ]
       }
+    },
+    {
+      "name": "TyrannosaurusThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrannosaurus_this_entity_kills_another_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/TyrannosaurusThisEntityKillsAnotherOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "rex_hurt",
+      "files": [
+        "rex_hurt"
+      ],
+      "category": "neutral",
+      "subtitle": "Tyrannosaurus gets hurt"
+    },
+    {
+      "name": "rex_death",
+      "files": [
+        "rex_death"
+      ],
+      "category": "neutral",
+      "subtitle": "Tyrannosaurus dies"
+    },
+    {
+      "name": "rex_roar",
+      "files": [
+        "rex_roar"
+      ],
+      "category": "neutral",
+      "subtitle": "Tyrannosaurus roars"
+    },
+    {
+      "name": "rex_ambient",
+      "files": [
+        "rex_ambient_1",
+        "rex_ambient_2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
+      "subtitles.rex_roar": "Tyrannosaurus roars",
       "entity.prehistoric_uprising.tyrannosaurus": "Tyrannosaurus",
-      "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg"
+      "subtitles.rex_hurt": "Tyrannosaurus gets hurt",
+      "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg",
+      "subtitles.rex_ambient": "",
+      "subtitles.rex_death": "Tyrannosaurus dies"
     }
   },
   "foldersRoot": {
