@@ -15,14 +15,14 @@
     "modelWidth": 2.0,
     "modelHeight": 4.6,
     "modelShadowSize": 0.5,
-    "mountedYOffset": 0.0,
+    "mountedYOffset": 0.5,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -10276067,
+      "value": -12639969,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3887729,
+      "value": -3752791,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -51,14 +51,14 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "attackKnockback": 1.0,
+    "attackStrength": 14,
+    "attackKnockback": 1.2000000000000002,
     "knockbackResistance": 999.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 128,
     "followRange": 32,
-    "health": 110,
+    "health": 24,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -68,9 +68,9 @@
     "deathTime": 20,
     "lerp": 4,
     "disableCollisions": false,
-    "ridable": true,
-    "canControlForward": true,
-    "canControlStrafe": true,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
@@ -99,11 +99,11 @@
     "stepSound": {
       "value": ""
     },
-    "onRightClickedOn": {
-      "name": "TyrannosaurusRightClickedOnEntity"
-    },
     "whenThisMobKillsAnother": {
       "name": "TyrannosaurusThisEntityKillsAnotherOne"
+    },
+    "onMobTickUpdate": {
+      "name": "DinosaurOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",
@@ -113,7 +113,7 @@
     "animation1": "idle",
     "animation2": "walk",
     "animation3": "",
-    "animation4": "",
+    "animation4": "Bite",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -122,7 +122,7 @@
     "animation10": "",
     "enable2": true,
     "enable3": false,
-    "enable4": false,
+    "enable4": true,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -148,7 +148,7 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

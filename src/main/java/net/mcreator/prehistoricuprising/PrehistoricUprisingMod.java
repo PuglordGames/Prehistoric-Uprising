@@ -31,8 +31,11 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModTabs;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModSounds;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModMenus;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModItems;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModEntities;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModBlocks;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,12 +55,14 @@ public class PrehistoricUprisingMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PrehistoricUprisingModSounds.REGISTRY.register(bus);
-
+		PrehistoricUprisingModBlocks.REGISTRY.register(bus);
+		PrehistoricUprisingModBlockEntities.REGISTRY.register(bus);
 		PrehistoricUprisingModItems.REGISTRY.register(bus);
 		PrehistoricUprisingModEntities.REGISTRY.register(bus);
 
 		PrehistoricUprisingModTabs.REGISTRY.register(bus);
 
+		PrehistoricUprisingModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

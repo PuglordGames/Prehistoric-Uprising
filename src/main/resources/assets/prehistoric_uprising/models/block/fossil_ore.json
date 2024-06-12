@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoric_uprising:block/fossil_ore",
+    "up": "prehistoric_uprising:block/fossil_ore",
+    "north": "prehistoric_uprising:block/fossil_ore",
+    "east": "prehistoric_uprising:block/fossil_ore",
+    "south": "prehistoric_uprising:block/fossil_ore",
+    "west": "prehistoric_uprising:block/fossil_ore",
+    "particle": "prehistoric_uprising:block/fossil_ore"
+  },
+  "render_type": "solid"
+}

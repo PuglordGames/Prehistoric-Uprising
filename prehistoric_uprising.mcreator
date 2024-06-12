@@ -27,16 +27,7 @@
         "files": [
           "src/main/java/net/mcreator/prehistoricuprising/procedures/TyrannosaurusRightClickedOnEntityProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -99,6 +90,722 @@
           }
         ]
       }
+    },
+    {
+      "name": "TyrannosaurusOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrannosaurus_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/TyrannosaurusOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cleaner",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleaner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/block/CleanerBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/cleaner.json",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/cleaner.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/entity/CleanerBlockEntity.java",
+          "src/main/resources/assets/prehistoric_uprising/models/block/cleaner.json"
+        ]
+      }
+    },
+    {
+      "name": "Extractor",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/block/ExtractorBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/extractor.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/entity/ExtractorBlockEntity.java",
+          "src/main/resources/assets/prehistoric_uprising/models/block/extractor.json",
+          "src/main/resources/assets/prehistoric_uprising/models/item/extractor.json"
+        ]
+      }
+    },
+    {
+      "name": "DNASequencer",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_sequencer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/block/dna_sequencer.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/DNASequencerBlock.java",
+          "src/main/java/net/mcreator/prehistoricuprising/block/entity/DNASequencerBlockEntity.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/dna_sequencer.json",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/dna_sequencer.json"
+        ]
+      }
+    },
+    {
+      "name": "Cultivator",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/item/cultivator.json",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/cultivator.json",
+          "src/main/resources/assets/prehistoric_uprising/models/block/cultivator.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/entity/CultivatorBlockEntity.java",
+          "src/main/java/net/mcreator/prehistoricuprising/block/CultivatorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "AmberOre",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prehistoric_uprising/worldgen/placed_feature/amber_ore.json",
+          "src/main/resources/assets/prehistoric_uprising/models/block/amber_ore.json",
+          "src/main/resources/data/prehistoric_uprising/forge/biome_modifier/amber_ore_biome_modifier.json",
+          "src/main/resources/assets/prehistoric_uprising/models/item/amber_ore.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/AmberOreBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/amber_ore.json",
+          "src/main/resources/data/prehistoric_uprising/worldgen/configured_feature/amber_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "ClearAmber",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_amber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/ClearAmberItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/clear_amber.json"
+        ]
+      }
+    },
+    {
+      "name": "Amber",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/AmberItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/amber.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilOre",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prehistoric_uprising/worldgen/configured_feature/fossil_ore.json",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/fossil_ore.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/FossilOreBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/fossil_ore.json",
+          "src/main/resources/assets/prehistoric_uprising/models/block/fossil_ore.json",
+          "src/main/resources/data/prehistoric_uprising/forge/biome_modifier/fossil_ore_biome_modifier.json",
+          "src/main/resources/data/prehistoric_uprising/worldgen/placed_feature/fossil_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "DirtyFossil",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_fossil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/DirtyFossilItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/dirty_fossil.json"
+        ]
+      }
+    },
+    {
+      "name": "Fossil",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/FossilItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/fossil.json"
+        ]
+      }
+    },
+    {
+      "name": "Vial",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/VialItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/vial.json"
+        ]
+      }
+    },
+    {
+      "name": "CompleteTyrannosaurusDNAVial",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "complete_tyrannosaurus_dna_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/CompleteTyrannosaurusDNAVialItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/complete_tyrannosaurus_dna_vial.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilOreLootTable",
+      "type": "loottable",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_ore_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prehistoric_uprising/loot_tables/blocks/fossil_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "AmberOreLootTable",
+      "type": "loottable",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_ore_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prehistoric_uprising/loot_tables/blocks/amber_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "CleanerGUI",
+      "type": "gui",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleaner_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/world/inventory/CleanerGUIMenu.java",
+          "src/main/java/net/mcreator/prehistoricuprising/client/gui/CleanerGUIScreen.java",
+          "src/main/java/net/mcreator/prehistoricuprising/network/CleanerGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CleanerGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleaner_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/CleanerGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CleanerItemTakenFromSlot",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleaner_item_taken_from_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/CleanerItemTakenFromSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExtractorGUI",
+      "type": "gui",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/client/gui/ExtractorGUIScreen.java",
+          "src/main/java/net/mcreator/prehistoricuprising/world/inventory/ExtractorGUIMenu.java",
+          "src/main/java/net/mcreator/prehistoricuprising/network/ExtractorGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ExtractorCanExtract",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor_can_extract",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/extractor_can_extract.json"
+        ]
+      }
+    },
+    {
+      "name": "ExtractorGUIWhenTHisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor_gui_when_t_his_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/ExtractorGUIWhenTHisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FracturedDNAVialAmber",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fractured_dna_vial_amber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/item/FracturedDNAVialAmberItem.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/fractured_dna_vial_amber.json"
+        ]
+      }
+    },
+    {
+      "name": "FracturedDNAVialFossil",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fractured_dna_vial_fossil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/item/fractured_dna_vial_fossil.json",
+          "src/main/java/net/mcreator/prehistoricuprising/item/FracturedDNAVialFossilItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CompleteDNAVials",
+      "type": "tag",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "complete_dna_vials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/complete_dna_vials.json"
+        ]
+      }
+    },
+    {
+      "name": "ExtractorItemTakenFromSlot",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor_item_taken_from_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/ExtractorItemTakenFromSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DNASequencerGUI",
+      "type": "gui",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_sequencer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/client/gui/DNASequencerGUIScreen.java",
+          "src/main/java/net/mcreator/prehistoricuprising/world/inventory/DNASequencerGUIMenu.java",
+          "src/main/java/net/mcreator/prehistoricuprising/network/DNASequencerGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "DNASequencerGUIWhenTHisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_sequencer_gui_when_t_his_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/DNASequencerGUIWhenTHisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DNASequencerItemTakenFromSlot",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_sequencer_item_taken_from_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/DNASequencerItemTakenFromSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CultivatorGUI",
+      "type": "gui",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/client/gui/CultivatorGUIScreen.java",
+          "src/main/java/net/mcreator/prehistoricuprising/network/CultivatorGUISlotMessage.java",
+          "src/main/java/net/mcreator/prehistoricuprising/world/inventory/CultivatorGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "CultivatorGUIWhenThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_gui_when_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/CultivatorGUIWhenThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CultivatorItemTakenFromSlot",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivator_item_taken_from_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/CultivatorItemTakenFromSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TyrannosaurusEgg",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrannosaurus_egg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/block/TyrannosaurusEggBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/tyrannosaurus_egg.json",
+          "src/main/resources/assets/prehistoric_uprising/models/block/tyrannosaurus_egg.json",
+          "src/main/resources/assets/prehistoric_uprising/models/item/tyrannosaurus_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "TyrannosaurusEggBlockAdded",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrannosaurus_egg_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/TyrannosaurusEggBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dakotaraptor",
+      "type": "animatedentity",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dakotaraptor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/item/dakotaraptor_spawn_egg.json",
+          "src/main/java/net/mcreator/prehistoricuprising/entity/model/DakotaraptorModel.java",
+          "src/main/java/net/mcreator/prehistoricuprising/entity/DakotaraptorEntity.java",
+          "src/main/java/net/mcreator/prehistoricuprising/client/renderer/DakotaraptorRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "DinosaurOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/DinosaurOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CompleteDakotaraptorDNAVial",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "complete_dakotaraptor_dna_vial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/item/complete_dakotaraptor_dna_vial.json",
+          "src/main/java/net/mcreator/prehistoricuprising/item/CompleteDakotaraptorDNAVialItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DakotaraptorEgg",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dakotaraptor_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/prehistoric_uprising/models/block/dakotaraptor_egg.json",
+          "src/main/resources/assets/prehistoric_uprising/blockstates/dakotaraptor_egg.json",
+          "src/main/java/net/mcreator/prehistoricuprising/block/DakotaraptorEggBlock.java",
+          "src/main/resources/assets/prehistoric_uprising/models/item/dakotaraptor_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "DakotaraptorEggBlockAdded",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dakotaraptor_egg_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prehistoricuprising/procedures/DakotaraptorEggBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -135,16 +842,66 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "dakotaraptor_ambient",
+      "files": [
+        "dakotaraptor_ambient"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "dakotaraptor_pain",
+      "files": [
+        "dakotaraptor_pain"
+      ],
+      "category": "hostile",
+      "subtitle": "Dakotaraptor gets hurt"
+    },
+    {
+      "name": "dakotaraptor_death",
+      "files": [
+        "dakotaraptor_death"
+      ],
+      "category": "hostile",
+      "subtitle": "Dakotaraptor dies"
     }
   ],
   "language_map": {
     "en_us": {
+      "gui.prehistoric_uprising.cultivator_gui.label_cleaner": "Cultivator",
+      "item.prehistoric_uprising.clear_amber": "Amber",
+      "item.prehistoric_uprising.fractured_dna_vial_amber": "Fractured DNA Vial",
+      "block.prehistoric_uprising.amber_ore": "Amber Ore",
+      "subtitles.rex_ambient": "",
+      "subtitles.dakotaraptor_ambient": "",
+      "block.prehistoric_uprising.dakotaraptor_egg": "Dakotaraptor Egg",
+      "item.prehistoric_uprising.amber": "Amber",
+      "item.prehistoric_uprising.fossil": "Fossil",
+      "entity.prehistoric_uprising.dakotaraptor": "Dakotaraptor",
+      "block.prehistoric_uprising.fossil_ore": "Fossil Ore",
+      "item.prehistoric_uprising.dakotaraptor_spawn_egg": "Dakotaraptor Spawn Egg",
+      "subtitles.rex_hurt": "Tyrannosaurus gets hurt",
+      "item.prehistoric_uprising.vial": "Vial",
+      "item.prehistoric_uprising.fractured_dna_vial_fossil": "Fractured DNA Vial",
+      "subtitles.dakotaraptor_pain": "Dakotaraptor gets hurt",
+      "item.prehistoric_uprising.complete_dakotaraptor_dna_vial": "Complete Dakotaraptor DNA Vial",
+      "subtitles.dakotaraptor_death": "Dakotaraptor dies",
+      "gui.prehistoric_uprising.cleaner_gui.label_cleaner": "Cleaner",
+      "gui.prehistoric_uprising.dna_sequencer_gui.label_cleaner": "DNA Sequencer",
+      "block.prehistoric_uprising.cleaner": "Cleaner",
+      "item.prehistoric_uprising.complete_tyrannosaurus_dna_vial": "Complete Tyrannosaurus DNA Vial",
+      "subtitles.rex_death": "Tyrannosaurus dies",
       "subtitles.rex_roar": "Tyrannosaurus roars",
       "entity.prehistoric_uprising.tyrannosaurus": "Tyrannosaurus",
-      "subtitles.rex_hurt": "Tyrannosaurus gets hurt",
+      "block.prehistoric_uprising.tyrannosaurus_egg": "Tyrannosaurus Egg",
+      "block.prehistoric_uprising.dna_sequencer": "DNA Sequencer",
+      "gui.prehistoric_uprising.extractor_gui.label_cleaner": "Extractor",
       "item.prehistoric_uprising.tyrannosaurus_spawn_egg": "Tyrannosaurus Spawn Egg",
-      "subtitles.rex_ambient": "",
-      "subtitles.rex_death": "Tyrannosaurus dies"
+      "block.prehistoric_uprising.cultivator": "Cultivator",
+      "item.prehistoric_uprising.dirty_fossil": "Dirty Fossil",
+      "block.prehistoric_uprising.extractor": "Extractor"
     }
   },
   "foldersRoot": {

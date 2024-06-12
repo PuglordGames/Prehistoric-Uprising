@@ -37,5 +37,31 @@
         "stream": false
       }
     ]
+  },
+  "dakotaraptor_ambient": {
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:dakotaraptor_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "dakotaraptor_pain": {
+    "subtitle": "subtitles.dakotaraptor_pain",
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:dakotaraptor_pain",
+        "stream": false
+      }
+    ]
+  },
+  "dakotaraptor_death": {
+    "subtitle": "subtitles.dakotaraptor_death",
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:dakotaraptor_death",
+        "stream": false
+      }
+    ]
   }
 }

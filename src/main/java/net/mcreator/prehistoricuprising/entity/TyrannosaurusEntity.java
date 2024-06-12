@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Items;
@@ -56,7 +55,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.prehistoricuprising.procedures.TyrannosaurusThisEntityKillsAnotherOneProcedure;
-import net.mcreator.prehistoricuprising.procedures.TyrannosaurusRightClickedOnEntityProcedure;
+import net.mcreator.prehistoricuprising.procedures.DinosaurOnEntityTickUpdateProcedure;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModEntities;
 
 import java.util.List;
@@ -79,6 +78,7 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -125,6 +125,16 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
+	}
+
+	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 0.5;
 	}
 
 	@Override
@@ -182,14 +192,6 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 					this.setPersistenceRequired();
 			}
 		}
-		sourceentity.startRiding(this);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level();
-
-		TyrannosaurusRightClickedOnEntityProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 
@@ -202,6 +204,7 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		DinosaurOnEntityTickUpdateProcedure.execute(this.level(), this);
 		this.refreshDimensions();
 	}
 
@@ -223,37 +226,6 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	public void travel(Vec3 dir) {
-		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
-		if (this.isVehicle()) {
-			this.setYRot(entity.getYRot());
-			this.yRotO = this.getYRot();
-			this.setXRot(entity.getXRot() * 0.5F);
-			this.setRot(this.getYRot(), this.getXRot());
-			this.yBodyRot = entity.getYRot();
-			this.yHeadRot = entity.getYRot();
-			this.setMaxUpStep(1.0F);
-			if (entity instanceof LivingEntity passenger) {
-				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
-				float forward = passenger.zza;
-				float strafe = passenger.xxa;
-				super.travel(new Vec3(strafe, 0, forward));
-			}
-			double d1 = this.getX() - this.xo;
-			double d0 = this.getZ() - this.zo;
-			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
-			if (f1 > 1.0F)
-				f1 = 1.0F;
-			this.walkAnimation.setSpeed(this.walkAnimation.speed() + (f1 - this.walkAnimation.speed()) * 0.4F);
-			this.walkAnimation.position(this.walkAnimation.position() + this.walkAnimation.speed());
-			this.calculateEntityAnimation(true);
-			return;
-		}
-		this.setMaxUpStep(0.5F);
-		super.travel(dir);
-	}
-
-	@Override
 	public void aiStep() {
 		super.aiStep();
 		this.updateSwingTime();
@@ -264,13 +236,13 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 110);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
+		builder = builder.add(Attributes.MAX_HEALTH, 24);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 14);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 999);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1.2);
 		return builder;
 	}
 
@@ -284,6 +256,24 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 			return event.setAndContinue(RawAnimation.begin().thenLoop("idle"));
 		}
 		return PlayState.STOP;
+	}
+
+	private PlayState attackingPredicate(AnimationState event) {
+		double d1 = this.getX() - this.xOld;
+		double d0 = this.getZ() - this.zOld;
+		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+			this.swinging = true;
+			this.lastSwing = level().getGameTime();
+		}
+		if (this.swinging && this.lastSwing + 7L <= level().getGameTime()) {
+			this.swinging = false;
+		}
+		if (this.swinging && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+			event.getController().forceAnimationReset();
+			return event.setAndContinue(RawAnimation.begin().thenPlay("Bite"));
+		}
+		return PlayState.CONTINUE;
 	}
 
 	private PlayState procedurePredicate(AnimationState event) {
@@ -334,6 +324,7 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
 		data.add(new AnimationController<>(this, "movement", 4, this::movementPredicate));
+		data.add(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.add(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 

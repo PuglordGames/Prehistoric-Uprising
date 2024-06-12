@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.prehistoricuprising.entity.TyrannosaurusEntity;
+import net.mcreator.prehistoricuprising.entity.DakotaraptorEntity;
 import net.mcreator.prehistoricuprising.PrehistoricUprisingMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,6 +27,10 @@ public class PrehistoricUprisingModEntities {
 			EntityType.Builder.<TyrannosaurusEntity>of(TyrannosaurusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(TyrannosaurusEntity::new)
 
 					.sized(2f, 4.6f));
+	public static final RegistryObject<EntityType<DakotaraptorEntity>> DAKOTARAPTOR = register("dakotaraptor",
+			EntityType.Builder.<DakotaraptorEntity>of(DakotaraptorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DakotaraptorEntity::new)
+
+					.sized(0.4f, 1.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -35,11 +40,13 @@ public class PrehistoricUprisingModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			TyrannosaurusEntity.init();
+			DakotaraptorEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(TYRANNOSAURUS.get(), TyrannosaurusEntity.createAttributes().build());
+		event.put(DAKOTARAPTOR.get(), DakotaraptorEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:CompleteTyrannosaurusDNAVial"
+      },
+      {
+        "value": "CUSTOM:CompleteDakotaraptorDNAVial"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "complete_dna_vials",
+    "namespace": "minecraft"
+  }
+}

@@ -19,4 +19,7 @@ public class PrehistoricUprisingModSounds {
 	public static final RegistryObject<SoundEvent> REX_DEATH = REGISTRY.register("rex_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "rex_death")));
 	public static final RegistryObject<SoundEvent> REX_ROAR = REGISTRY.register("rex_roar", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "rex_roar")));
 	public static final RegistryObject<SoundEvent> REX_AMBIENT = REGISTRY.register("rex_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "rex_ambient")));
+	public static final RegistryObject<SoundEvent> DAKOTARAPTOR_AMBIENT = REGISTRY.register("dakotaraptor_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "dakotaraptor_ambient")));
+	public static final RegistryObject<SoundEvent> DAKOTARAPTOR_PAIN = REGISTRY.register("dakotaraptor_pain", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "dakotaraptor_pain")));
+	public static final RegistryObject<SoundEvent> DAKOTARAPTOR_DEATH = REGISTRY.register("dakotaraptor_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("prehistoric_uprising", "dakotaraptor_death")));
 }

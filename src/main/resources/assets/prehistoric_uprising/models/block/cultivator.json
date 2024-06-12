@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoric_uprising:block/cultivator_top",
+    "up": "prehistoric_uprising:block/cultivator_top",
+    "north": "prehistoric_uprising:block/cultivator_side",
+    "east": "prehistoric_uprising:block/cultivator_side",
+    "south": "prehistoric_uprising:block/cultivator_side",
+    "west": "prehistoric_uprising:block/cultivator_side",
+    "particle": "prehistoric_uprising:block/cultivator_top"
+  },
+  "render_type": "translucent"
+}

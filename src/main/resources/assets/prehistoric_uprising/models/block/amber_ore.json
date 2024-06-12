@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoric_uprising:block/amber_ore",
+    "up": "prehistoric_uprising:block/amber_ore",
+    "north": "prehistoric_uprising:block/amber_ore",
+    "east": "prehistoric_uprising:block/amber_ore",
+    "south": "prehistoric_uprising:block/amber_ore",
+    "west": "prehistoric_uprising:block/amber_ore",
+    "particle": "prehistoric_uprising:block/amber_ore"
+  },
+  "render_type": "solid"
+}

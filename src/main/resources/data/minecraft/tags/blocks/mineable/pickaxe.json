@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "prehistoric_uprising:cleaner",
+    "prehistoric_uprising:extractor",
+    "prehistoric_uprising:dna_sequencer",
+    "prehistoric_uprising:cultivator",
+    "prehistoric_uprising:amber_ore",
+    "prehistoric_uprising:fossil_ore"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prehistoric_uprising:block/cleaner_top",
+    "up": "prehistoric_uprising:block/cleaner_top",
+    "north": "prehistoric_uprising:block/cleaner_side",
+    "east": "prehistoric_uprising:block/cleaner_side",
+    "south": "prehistoric_uprising:block/cleaner_side",
+    "west": "prehistoric_uprising:block/cleaner_side",
+    "particle": "prehistoric_uprising:block/cleaner_top"
+  },
+  "render_type": "translucent"
+}
