@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:minecraft:complete_dna_vials"
+            "value": "CUSTOM:CompleteDNAVial"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -81,8 +81,8 @@
         "data": {
           "image": "arrow.png",
           "use1Xscale": true,
-          "x": 174,
-          "y": 49
+          "x": 173,
+          "y": 50
         }
       }
     ],

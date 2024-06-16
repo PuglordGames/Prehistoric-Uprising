@@ -47,7 +47,7 @@ public class CultivatorGUIScreen extends AbstractContainerScreen<CultivatorGUIMe
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("prehistoric_uprising:textures/screens/arrow.png"), this.leftPos + 48, this.topPos + 12, 0, 0, 64, 64, 64, 64);
+		guiGraphics.blit(new ResourceLocation("prehistoric_uprising:textures/screens/arrow.png"), this.leftPos + 47, this.topPos + 13, 0, 0, 64, 64, 64, 64);
 
 		RenderSystem.disableBlend();
 	}

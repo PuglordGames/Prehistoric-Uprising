@@ -34,6 +34,14 @@ public class PrehistoricUprisingModTabs {
 			tabData.accept(PrehistoricUprisingModBlocks.TYRANNOSAURUS_EGG.get().asItem());
 			tabData.accept(PrehistoricUprisingModItems.DAKOTARAPTOR_SPAWN_EGG.get());
 			tabData.accept(PrehistoricUprisingModBlocks.DAKOTARAPTOR_EGG.get().asItem());
+			tabData.accept(PrehistoricUprisingModItems.CARNOTAURUS_SPAWN_EGG.get());
+			tabData.accept(PrehistoricUprisingModBlocks.CARNOTAURUS_EGG.get().asItem());
+			tabData.accept(PrehistoricUprisingModItems.TRICERATOPS_SPAWN_EGG.get());
+			tabData.accept(PrehistoricUprisingModBlocks.TRICERATOPS_EGG.get().asItem());
+			tabData.accept(PrehistoricUprisingModItems.PARASAUROLOPHUS_SPAWN_EGG.get());
+			tabData.accept(PrehistoricUprisingModBlocks.PARASAUROLOPHUS_EGG.get().asItem());
+			tabData.accept(PrehistoricUprisingModItems.EDMONTOSAURUS_SPAWN_EGG.get());
+			tabData.accept(PrehistoricUprisingModBlocks.EDMONTOSAURUS_EGG.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -42,10 +50,10 @@ public class PrehistoricUprisingModTabs {
 			tabData.accept(PrehistoricUprisingModItems.DIRTY_FOSSIL.get());
 			tabData.accept(PrehistoricUprisingModItems.FOSSIL.get());
 			tabData.accept(PrehistoricUprisingModItems.VIAL.get());
-			tabData.accept(PrehistoricUprisingModItems.COMPLETE_TYRANNOSAURUS_DNA_VIAL.get());
 			tabData.accept(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_AMBER.get());
 			tabData.accept(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_FOSSIL.get());
-			tabData.accept(PrehistoricUprisingModItems.COMPLETE_DAKOTARAPTOR_DNA_VIAL.get());
+			tabData.accept(PrehistoricUprisingModItems.COMPLETE_DNA_VIAL.get());
+			tabData.accept(PrehistoricUprisingModItems.CIRCUIT.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

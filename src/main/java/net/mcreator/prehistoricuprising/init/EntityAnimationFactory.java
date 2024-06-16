@@ -5,7 +5,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.prehistoricuprising.entity.TyrannosaurusEntity;
+import net.mcreator.prehistoricuprising.entity.TriceratopsEntity;
+import net.mcreator.prehistoricuprising.entity.ParasaurolophusEntity;
+import net.mcreator.prehistoricuprising.entity.EdmontosaurusEntity;
 import net.mcreator.prehistoricuprising.entity.DakotaraptorEntity;
+import net.mcreator.prehistoricuprising.entity.CarnotaurusEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -20,6 +24,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DakotaraptorEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CarnotaurusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TriceratopsEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ParasaurolophusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof EdmontosaurusEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

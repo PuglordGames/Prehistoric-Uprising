@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "prehistoric_uprising:tyrannosaurus"
+    "prehistoric_uprising:tyrannosaurus",
+    "prehistoric_uprising:dakotaraptor",
+    "prehistoric_uprising:carnotaurus",
+    "prehistoric_uprising:triceratops"
   ]
 }

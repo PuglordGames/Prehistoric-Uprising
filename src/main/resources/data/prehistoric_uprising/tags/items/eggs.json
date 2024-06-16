@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "prehistoric_uprising:tyrannosaurus_egg",
+    "prehistoric_uprising:dakotaraptor_egg",
+    "prehistoric_uprising:carnotaurus_egg",
+    "prehistoric_uprising:triceratops_egg",
+    "prehistoric_uprising:parasaurolophus_egg",
+    "prehistoric_uprising:edmontosaurus_egg"
+  ]
+}

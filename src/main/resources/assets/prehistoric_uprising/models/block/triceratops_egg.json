@@ -1,0 +1,9 @@
+{
+  "parent": "prehistoric_uprising:custom/egg",
+  "textures": {
+    "all": "prehistoric_uprising:block/egg",
+    "particle": "prehistoric_uprising:block/egg",
+    "0": "prehistoric_uprising:block/egg"
+  },
+  "render_type": "solid"
+}

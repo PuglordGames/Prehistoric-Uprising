@@ -104,7 +104,7 @@ public class DakotaraptorEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, true, true));
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Sheep.class, true, true));
 		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
 		this.goalSelector.addGoal(4, new OwnerHurtByTargetGoal(this));
@@ -232,7 +232,7 @@ public class DakotaraptorEntity extends TamableAnimal implements GeoEntity {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
 		builder = builder.add(Attributes.MAX_HEALTH, 24);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 14);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 999);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1.2);

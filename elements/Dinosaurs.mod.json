@@ -9,6 +9,15 @@
     "entities": [
       {
         "value": "CUSTOM:Tyrannosaurus"
+      },
+      {
+        "value": "CUSTOM:Dakotaraptor"
+      },
+      {
+        "value": "CUSTOM:Carnotaurus"
+      },
+      {
+        "value": "CUSTOM:Triceratops"
       }
     ],
     "biomes": [],

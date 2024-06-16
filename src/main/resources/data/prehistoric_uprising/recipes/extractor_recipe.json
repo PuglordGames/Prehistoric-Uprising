@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "prehistoric_uprising:vial"
+    },
+    "c": {
+      "item": "prehistoric_uprising:circuit"
+    }
+  },
+  "result": {
+    "item": "prehistoric_uprising:extractor",
+    "count": 1
+  }
+}

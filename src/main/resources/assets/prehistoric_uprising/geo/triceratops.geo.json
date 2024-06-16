@@ -1,0 +1,152 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.triceratops",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Triceratops",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Triceratops",
+					"pivot": [0, 27, 4],
+					"cubes": [
+						{"origin": [-11, 12, -20], "size": [22, 27, 41], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "Body",
+					"pivot": [0, 35, 21],
+					"cubes": [
+						{"origin": [-8, 20, 21], "size": [16, 19, 13], "uv": [86, 0]}
+					]
+				},
+				{
+					"name": "Tail2",
+					"parent": "Tail",
+					"pivot": [0, 35, 34],
+					"cubes": [
+						{"origin": [-5, 28, 34], "size": [10, 11, 27], "uv": [0, 69]}
+					]
+				},
+				{
+					"name": "Neck",
+					"parent": "Body",
+					"pivot": [0, 29, -19],
+					"cubes": [
+						{"origin": [-5, 20, -36], "size": [10, 15, 20], "uv": [75, 69]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Neck",
+					"pivot": [0, 33, -30],
+					"cubes": [
+						{"origin": [-1, 35, -51], "size": [2, 4, 3], "uv": [48, 88]},
+						{"origin": [2, 34, -42], "size": [4, 16, 4], "pivot": [4, 36, -40], "rotation": [0, 0, 22.5], "uv": [137, 139]},
+						{"origin": [-6, 34, -42], "size": [4, 16, 4], "pivot": [-4, 36, -40], "rotation": [0, 0, -22.5], "uv": [120, 139]},
+						{"origin": [-11, 31, -30], "size": [22, 21, 3], "pivot": [0, 32.5, -28.5], "rotation": [-22.5, 0, 0], "uv": [0, 108]},
+						{"origin": [-6, 27, -40], "size": [12, 9, 12], "uv": [116, 57]},
+						{"origin": [-3, 26, -54], "size": [6, 9, 14], "uv": [0, 0]},
+						{"origin": [-3.5, 21, -55], "size": [7, 8, 3], "uv": [92, 105]}
+					]
+				},
+				{
+					"name": "Jaw",
+					"parent": "Head",
+					"pivot": [0, 27, -28],
+					"cubes": [
+						{"origin": [-6, 22, -40], "size": [12, 5, 12], "uv": [127, 33]},
+						{"origin": [-5.9, 27, -38], "size": [11.8, 6, 10], "uv": [165, 2]},
+						{"origin": [-5.9, 27, -37], "size": [11.8, 6, 0], "uv": [158, 0]},
+						{"origin": [-3, 22, -54], "size": [6, 4, 14], "uv": [48, 69]}
+					]
+				},
+				{
+					"name": "LeftLeg",
+					"parent": "Triceratops",
+					"pivot": [10, 25, 10],
+					"cubes": [
+						{"origin": [6, 9, 3], "size": [8, 19, 14], "uv": [106, 105]}
+					]
+				},
+				{
+					"name": "LowerLeftLeg",
+					"parent": "LeftLeg",
+					"pivot": [10, 15, 15],
+					"cubes": [
+						{"origin": [7, 3, 11], "size": [6, 14, 7], "uv": [136, 79]}
+					]
+				},
+				{
+					"name": "LeftFoot",
+					"parent": "LowerLeftLeg",
+					"pivot": [10, 2, 15],
+					"cubes": [
+						{"origin": [6, 0, 9], "size": [8, 3, 9], "uv": [132, 0]},
+						{"origin": [9, 1, 6], "size": [2, 3, 4], "uv": [86, 0]},
+						{"origin": [12, 1, 6], "size": [2, 3, 4], "uv": [86, 0]},
+						{"origin": [6, 1, 6], "size": [2, 3, 4], "uv": [86, 0]}
+					]
+				},
+				{
+					"name": "RightLeg",
+					"parent": "Triceratops",
+					"pivot": [-10, 25, 10],
+					"cubes": [
+						{"origin": [-14, 9, 3], "size": [8, 19, 14], "uv": [61, 105]}
+					]
+				},
+				{
+					"name": "LowerRightLeg",
+					"parent": "RightLeg",
+					"pivot": [-10, 15, 15],
+					"cubes": [
+						{"origin": [-13, 3, 11], "size": [6, 14, 7], "uv": [0, 69]}
+					]
+				},
+				{
+					"name": "RightFoot",
+					"parent": "LowerRightLeg",
+					"pivot": [-10, 2, 15],
+					"cubes": [
+						{"origin": [-14, 0, 9], "size": [8, 3, 9], "uv": [0, 24]},
+						{"origin": [-11, 1, 6], "size": [2, 3, 4], "uv": [86, 0]},
+						{"origin": [-14, 1, 6], "size": [2, 3, 4], "uv": [86, 0]},
+						{"origin": [-8, 1, 6], "size": [2, 3, 4], "uv": [86, 0]}
+					]
+				},
+				{
+					"name": "RightArm",
+					"parent": "Triceratops",
+					"pivot": [-10, 18, -11],
+					"cubes": [
+						{"origin": [-13, 0, -12], "size": [6, 12, 6], "uv": [70, 139]},
+						{"origin": [-14, 7, -16], "size": [8, 13, 9], "uv": [0, 133]},
+						{"origin": [-15, 0, -14], "size": [10, 0, 8], "uv": [84, 33]}
+					]
+				},
+				{
+					"name": "LeftArm",
+					"parent": "Triceratops",
+					"pivot": [10, 18, -11],
+					"cubes": [
+						{"origin": [7, 0, -12], "size": [6, 12, 6], "uv": [95, 139]},
+						{"origin": [6, 7, -16], "size": [8, 13, 9], "uv": [35, 133]},
+						{"origin": [5, 0, -14], "size": [10, 0, 8], "uv": [135, 101]}
+					]
+				}
+			]
+		}
+	]
+}

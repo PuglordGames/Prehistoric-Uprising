@@ -105,21 +105,22 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Sheep.class, true, true));
-		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
-		this.goalSelector.addGoal(4, new OwnerHurtByTargetGoal(this));
-		this.goalSelector.addGoal(5, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-		this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false) {
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, TriceratopsEntity.class, true, true));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true));
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Sheep.class, true, true));
+		this.targetSelector.addGoal(4, new OwnerHurtTargetGoal(this));
+		this.goalSelector.addGoal(5, new OwnerHurtByTargetGoal(this));
+		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+		this.goalSelector.addGoal(7, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(8, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(9, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(11, new FloatGoal(this));
 	}
 
 	@Override
@@ -237,7 +238,7 @@ public class TyrannosaurusEntity extends TamableAnimal implements GeoEntity {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
-		builder = builder.add(Attributes.MAX_HEALTH, 24);
+		builder = builder.add(Attributes.MAX_HEALTH, 110);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 14);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);

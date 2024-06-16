@@ -1,0 +1,151 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.edmontosaurus",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 20,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Edmontosaurus",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Edmontosaurus",
+					"pivot": [0, 31, 0],
+					"cubes": [
+						{"origin": [-9, 17, -28], "size": [18, 34, 60], "uv": [137, 45]},
+						{"origin": [0, 45, -30], "size": [0, 9, 62], "uv": [123, 140]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "Body",
+					"pivot": [0, 44, 32],
+					"cubes": [
+						{"origin": [-6, 28, 32], "size": [12, 23, 23], "uv": [0, 0]},
+						{"origin": [0, 51, 32], "size": [0, 2, 23], "uv": [105, 65]}
+					]
+				},
+				{
+					"name": "Tail2",
+					"parent": "Tail",
+					"pivot": [0, 44, 55],
+					"cubes": [
+						{"origin": [-3, 39, 55], "size": [6, 12, 92], "uv": [0, 0]},
+						{"origin": [0, 51, 55], "size": [0, 2, 92], "uv": [0, 105]}
+					]
+				},
+				{
+					"name": "Neck",
+					"parent": "Body",
+					"pivot": [0, 37, -28],
+					"cubes": [
+						{"origin": [-4, 30, -45], "size": [8, 15, 17], "uv": [105, 0]},
+						{"origin": [0, 45, -45], "size": [0, 2, 17], "uv": [109, 123]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Neck",
+					"pivot": [0, 42, -43],
+					"cubes": [
+						{"origin": [-5, 41, -49], "size": [10, 5, 8], "uv": [93, 143]},
+						{"origin": [-3, 40, -60], "size": [6, 5, 11], "uv": [133, 140]},
+						{"origin": [-4, 38, -62], "size": [8, 5, 4], "uv": [36, 47]}
+					]
+				},
+				{
+					"name": "Jaw",
+					"parent": "Head",
+					"pivot": [0, 38, -41],
+					"rotation": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 37, -49], "size": [10, 4, 8], "uv": [51, 79]},
+						{"origin": [-3, 37, -60], "size": [6, 3, 11], "uv": [145, 22]},
+						{"origin": [-3, 40, -57], "size": [6, 5, 9], "inflate": -0.025, "uv": [0, 147]},
+						{"origin": [-5, 41, -48], "size": [10, 4, 7], "inflate": -0.025, "uv": [146, 37]}
+					]
+				},
+				{
+					"name": "LeftLeg",
+					"parent": "Edmontosaurus",
+					"pivot": [11, 34, 13],
+					"cubes": [
+						{"origin": [6, 15, 6], "size": [10, 26, 15], "uv": [0, 105]}
+					]
+				},
+				{
+					"name": "LowerLeftLeg",
+					"parent": "LeftLeg",
+					"pivot": [11, 23, 20],
+					"cubes": [
+						{"origin": [7, 3, 16], "size": [8, 26, 8], "uv": [93, 105]}
+					]
+				},
+				{
+					"name": "LeftFoot",
+					"parent": "LowerLeftLeg",
+					"pivot": [11, 2, 21],
+					"cubes": [
+						{"origin": [6, 0, 13], "size": [10, 3, 11], "uv": [139, 0]},
+						{"origin": [10, 1, 10], "size": [2, 3, 5], "uv": [71, 24]},
+						{"origin": [13, 1, 10], "size": [2, 3, 5], "uv": [71, 24]},
+						{"origin": [7, 1, 10], "size": [2, 3, 5], "uv": [71, 24]}
+					]
+				},
+				{
+					"name": "RightLeg",
+					"parent": "Edmontosaurus",
+					"pivot": [-11, 34, 13],
+					"cubes": [
+						{"origin": [-16, 15, 6], "size": [10, 26, 15], "uv": [0, 47]}
+					]
+				},
+				{
+					"name": "LowerRightLeg",
+					"parent": "RightLeg",
+					"pivot": [-11, 23, 20],
+					"cubes": [
+						{"origin": [-15, 3, 16], "size": [8, 26, 8], "uv": [51, 105]}
+					]
+				},
+				{
+					"name": "RightFoot",
+					"parent": "LowerRightLeg",
+					"pivot": [-11, 2, 21],
+					"cubes": [
+						{"origin": [-16, 0, 13], "size": [10, 3, 11], "uv": [48, 0]},
+						{"origin": [-12, 1, 10], "size": [2, 3, 5], "uv": [71, 24]},
+						{"origin": [-15, 1, 10], "size": [2, 3, 5], "uv": [71, 24]},
+						{"origin": [-9, 1, 10], "size": [2, 3, 5], "uv": [71, 24]}
+					]
+				},
+				{
+					"name": "LeftArm",
+					"parent": "Edmontosaurus",
+					"pivot": [11, 30, -20],
+					"cubes": [
+						{"origin": [6, 16, -25], "size": [9, 20, 11], "uv": [105, 33]},
+						{"origin": [7, 0, -20], "size": [7, 22, 8], "uv": [43, 140]}
+					]
+				},
+				{
+					"name": "RightArm",
+					"parent": "Edmontosaurus",
+					"pivot": [-11, 30, -20],
+					"cubes": [
+						{"origin": [-15, 16, -25], "size": [9, 20, 11], "uv": [51, 47]},
+						{"origin": [-14, 0, -20], "size": [7, 22, 8], "uv": [138, 57]}
+					]
+				}
+			]
+		}
+	]
+}

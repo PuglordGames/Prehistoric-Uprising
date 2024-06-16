@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "complete_vial",
+    "texture": "circuit",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Complete Tyrannosaurus DNA Vial",
+    "name": "Circuit",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MATERIALS"

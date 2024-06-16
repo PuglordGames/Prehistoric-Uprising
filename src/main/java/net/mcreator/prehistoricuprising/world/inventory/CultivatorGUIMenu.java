@@ -19,15 +19,14 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.prehistoricuprising.procedures.CultivatorGUIWhenThisGUIIsOpenTickProcedure;
 import net.mcreator.prehistoricuprising.network.CultivatorGUISlotMessage;
 import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModMenus;
+import net.mcreator.prehistoricuprising.init.PrehistoricUprisingModItems;
 import net.mcreator.prehistoricuprising.PrehistoricUprisingMod;
 
 import java.util.function.Supplier;
@@ -92,7 +91,7 @@ public class CultivatorGUIMenu extends AbstractContainerMenu implements Supplier
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("minecraft:complete_dna_vials")));
+				return PrehistoricUprisingModItems.COMPLETE_DNA_VIAL.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 53) {

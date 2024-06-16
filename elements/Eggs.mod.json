@@ -2,14 +2,33 @@
   "_fv": 57,
   "_type": "tag",
   "definition": {
-    "type": "Blocks",
-    "items": [],
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TyrannosaurusEgg"
+      },
+      {
+        "value": "CUSTOM:DakotaraptorEgg"
+      },
+      {
+        "value": "CUSTOM:CarnotaurusEgg"
+      },
+      {
+        "value": "CUSTOM:TriceratopsEgg"
+      },
+      {
+        "value": "CUSTOM:ParasaurolophusEgg"
+      },
+      {
+        "value": "CUSTOM:EdmontosaurusEgg"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
     "damageTypes": [],
     "name": "eggs",
-    "namespace": "minecraft"
+    "namespace": "prehistoric_uprising"
   }
 }
