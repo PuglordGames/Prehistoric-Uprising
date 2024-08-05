@@ -38,4 +38,6 @@ public class PrehistoricUprisingModBlocks {
 	public static final RegistryObject<Block> TRICERATOPS_EGG = REGISTRY.register("triceratops_egg", () -> new TriceratopsEggBlock());
 	public static final RegistryObject<Block> PARASAUROLOPHUS_EGG = REGISTRY.register("parasaurolophus_egg", () -> new ParasaurolophusEggBlock());
 	public static final RegistryObject<Block> EDMONTOSAURUS_EGG = REGISTRY.register("edmontosaurus_egg", () -> new EdmontosaurusEggBlock());
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 }

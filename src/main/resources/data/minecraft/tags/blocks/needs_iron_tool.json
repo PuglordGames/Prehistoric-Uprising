@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "prehistoric_uprising:cultivator",
+    "prehistoric_uprising:dna_sequencer",
+    "prehistoric_uprising:extractor",
+    "prehistoric_uprising:cleaner"
+  ]
+}

@@ -10,13 +10,15 @@ displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Puglord, MCreator"
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.prehistoric_uprising]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
-
 
 
 [[dependencies.prehistoric_uprising]]
@@ -26,3 +28,6 @@ authors="Puglord, MCreator"
     ordering="NONE"
     side="BOTH"
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

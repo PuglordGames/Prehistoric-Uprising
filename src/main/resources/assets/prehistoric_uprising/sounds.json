@@ -63,5 +63,13 @@
         "stream": false
       }
     ]
+  },
+  "parasaurolophus_horn_sound": {
+    "sounds": [
+      {
+        "name": "prehistoric_uprising:parasaurolophus_horn_sound",
+        "stream": false
+      }
+    ]
   }
 }

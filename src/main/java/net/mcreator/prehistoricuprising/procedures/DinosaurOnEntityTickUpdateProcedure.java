@@ -1,13 +1,16 @@
 package net.mcreator.prehistoricuprising.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 
+import net.mcreator.prehistoricuprising.network.PrehistoricUprisingModVariables;
 import net.mcreator.prehistoricuprising.entity.TyrannosaurusEntity;
 import net.mcreator.prehistoricuprising.entity.TriceratopsEntity;
 import net.mcreator.prehistoricuprising.entity.ParasaurolophusEntity;
+import net.mcreator.prehistoricuprising.entity.EdmontosaurusEntity;
 import net.mcreator.prehistoricuprising.entity.DakotaraptorEntity;
 import net.mcreator.prehistoricuprising.entity.CarnotaurusEntity;
 import net.mcreator.prehistoricuprising.PrehistoricUprisingMod;
@@ -64,6 +67,23 @@ public class DinosaurOnEntityTickUpdateProcedure {
 					if (entity instanceof ParasaurolophusEntity animatable)
 						animatable.setTexture("parasaurolophus");
 				});
+			}
+		}
+		if (entity instanceof EdmontosaurusEntity) {
+			if (Mth.nextInt(RandomSource.create(), 1, 250) == 1) {
+				if (entity instanceof EdmontosaurusEntity animatable)
+					animatable.setTexture("edmontosaurus_blink");
+				PrehistoricUprisingMod.queueServerWork(5, () -> {
+					if (entity instanceof EdmontosaurusEntity animatable)
+						animatable.setTexture("edmontosaurus");
+				});
+			}
+		}
+		if (entity instanceof ParasaurolophusEntity) {
+			if (PrehistoricUprisingModVariables.WorldVariables.get(world).para_horn_can_use == false) {
+				if (entity instanceof Mob _entity)
+					_entity.getNavigation().moveTo(PrehistoricUprisingModVariables.WorldVariables.get(world).para_horn_pos_x, PrehistoricUprisingModVariables.MapVariables.get(world).para_horn_pos_y,
+							PrehistoricUprisingModVariables.MapVariables.get(world).para_horn_pos_z, 1);
 			}
 		}
 	}

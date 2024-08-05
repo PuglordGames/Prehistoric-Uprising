@@ -6,8 +6,8 @@ import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.constant.DataTickets;
 
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.prehistoricuprising.entity.TriceratopsEntity;
 
@@ -29,12 +29,11 @@ public class TriceratopsModel extends GeoModel<TriceratopsEntity> {
 
 	@Override
 	public void setCustomAnimations(TriceratopsEntity animatable, long instanceId, AnimationState animationState) {
-		CoreGeoBone head = getAnimationProcessor().getBone("Neck");
+		CoreGeoBone head = getAnimationProcessor().getBone("neck");
 		if (head != null) {
-			int unpausedMultiplier = !Minecraft.getInstance().isPaused() ? 1 : 0;
 			EntityModelData entityData = (EntityModelData) animationState.getData(DataTickets.ENTITY_MODEL_DATA);
-			head.setRotX(entityData.headPitch() * ((float) Math.PI / 180F) * unpausedMultiplier);
-			head.setRotY(entityData.netHeadYaw() * ((float) Math.PI / 180F) * unpausedMultiplier);
+			head.setRotX(entityData.headPitch() * Mth.DEG_TO_RAD);
+			head.setRotY(entityData.netHeadYaw() * Mth.DEG_TO_RAD);
 		}
 
 	}

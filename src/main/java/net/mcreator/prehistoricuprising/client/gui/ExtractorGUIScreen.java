@@ -62,18 +62,8 @@ public class ExtractorGUIScreen extends AbstractContainerScreen<ExtractorGUIMenu
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.prehistoric_uprising.extractor_gui.label_cleaner"), 69, 7, -12829636, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class ExtractorGUIWhenTHisGUIIsOpenTickProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == PrehistoricUprisingModItems.VIAL
 						.get()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_AMBER.get());
+				ItemStack _setstack = new ItemStack(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_AMBER.get()).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(2)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
@@ -28,7 +28,7 @@ public class ExtractorGUIWhenTHisGUIIsOpenTickProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == PrehistoricUprisingModItems.VIAL
 						.get()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_FOSSIL.get());
+				ItemStack _setstack = new ItemStack(PrehistoricUprisingModItems.FRACTURED_DNA_VIAL_FOSSIL.get()).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(2)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
